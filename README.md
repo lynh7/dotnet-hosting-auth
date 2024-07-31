@@ -1,3 +1,8 @@
+##Updated 31/7/2024
+-Implement Authen services with JWT
+-Hosting with nginx, free domain and running with Docker on a physical Ubuntu server
+-Techs: .NET Web API, ReactJS, MySql
+
 ## Architecture
 <p>This project was modified with ASP.NET Core and micro-services architecture, it was implement 2 services called "Book Management Service" and "Scence Management Service", these services communicates through an Ocelot Gateway.</p>
 <br>
