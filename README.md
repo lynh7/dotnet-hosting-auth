@@ -1,4 +1,4 @@
-##Updated 31/7/2024
+## Updated 31/7/2024
 -Implement Authen services with JWT
 -Hosting with nginx, free domain and running with Docker on a physical Ubuntu server
 -Techs: .NET Web API, ReactJS, MySql
