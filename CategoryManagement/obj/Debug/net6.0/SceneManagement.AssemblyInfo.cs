@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SceneManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e61ad86a80901b94f43931ec12bc7494d6f766dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SceneManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SceneManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
