@@ -1,0 +1,34 @@
+﻿{
+  "profiles": {
+    "Host.Gateway": {
+      "commandName": "Project",
+      "commandLineArgs": "--provider Mysql",
+      "launchBrowser": false,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GH_DB_CONNECTION": "server=localhost;user=root;database=host_dev;password=root;port=3306",
+        "DB_Provider": "Mysql"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:5003;http://localhost:5004"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:49082",
+      "sslPort": 44373
+    }
+  }
+}
