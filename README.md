@@ -3,5 +3,4 @@
 -Hosting with nginx, free domain and running with Docker on a physical Ubuntu server <br>
 -Techs: .NET Web API, ReactJS, MySql
 
-![image](https://github.com/user-attachments/assets/8e531c32-50f9-4224-aed6-df050d9c7d26)
-
+![image](https://excalidraw.com/#json=c5AmmKE8Eq4smoEkzeJGX,62JICj1ZAhLPbP53un5iIg)
