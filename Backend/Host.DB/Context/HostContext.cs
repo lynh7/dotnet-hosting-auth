@@ -84,5 +84,27 @@ namespace Host.DB.Context
                 await Database.MigrateAsync();
             }
         }
+
+
+        #region Methods
+        public virtual DbSet<T> Repository<T>() where T : class
+        {
+            return Set<T>();
+        }
+        public virtual async Task<int> SaveChangesAsync()
+        {
+            var changedEntries = base.ChangeTracker.Entries()
+                .Where(e => e.State == EntityState.Added ||
+                            e.State == EntityState.Modified ||
+                            e.State == EntityState.Deleted)
+                .GroupBy(e => e.Metadata.Name)
+                .Select(g => g.First())
+                .Select(e => e.Entity.GetType());
+
+            var result = await base.SaveChangesAsync();
+
+            return result;
+        }
+        #endregion 
     }
 }
