@@ -10,14 +10,12 @@
 		<ProjectReference Include="..\Host.Common\Host.Common.csproj" />
 		<ProjectReference Include="..\Host.DB.MySQL\Host.DB.MySQL.csproj" />
 		<ProjectReference Include="..\Host.DB\Host.DB.csproj" />
+		<ProjectReference Include="..\Host.Models\Host.Models.csproj" />
 		<ProjectReference Include="..\Host.Services\Host.Services.csproj" />
 	</ItemGroup>
 	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Controllers\" />
 	</ItemGroup>
 
 </Project>
