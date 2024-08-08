@@ -32,7 +32,7 @@ namespace Host.DB
             try
             {
                 var sqlProvider = Environment.GetEnvironmentVariable(EnvironmentConstants.DB_Provider);
-                
+
                 services.AddDbContext<HostContext>(options =>
                 _ = sqlProvider switch
                 {
@@ -41,14 +41,13 @@ namespace Host.DB
                     _ => throw new Exception($"Unsupported provider: {sqlProvider}")
                 });
 
-                //services.RegisterAssemblyPublicNonGenericClasses()
-                //.Where(c => c.Name.EndsWith("Repository"))
-                //.AsPublicImplementedInterfaces(ServiceLifetime.Scoped);
+                services.RegisterAssemblyPublicNonGenericClasses()
+                .Where(c => c.Name.EndsWith("Repository"))
+                .AsPublicImplementedInterfaces(ServiceLifetime.Scoped);
 
-
-                //services.RegisterAssemblyPublicNonGenericClasses()
-                // .Where(c => c.Name.EndsWith("UnitOfWork"))
-                // .AsPublicImplementedInterfaces(ServiceLifetime.Scoped);
+                services.RegisterAssemblyPublicNonGenericClasses()
+                 .Where(c => c.Name.EndsWith("UnitOfWork"))
+                 .AsPublicImplementedInterfaces(ServiceLifetime.Scoped);
 
                 return services;
             }

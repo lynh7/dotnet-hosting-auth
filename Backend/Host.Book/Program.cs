@@ -1,8 +1,11 @@
 using Host.DB;
+using Host.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistence();
+builder.Services.AddServices();
+builder.Services.ConstructApiVersioning();
 builder.Services.AddControllers().AddJsonOptions(
         options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
