@@ -14,7 +14,7 @@ namespace Host.DB.Entities
         public string CategoryName { get; set; }
         public virtual IList<Book>? Books { get; set; }
 
-        public BookCategory InitBookCategory()
+        public BookCategory InitBookCategory()  
         {
             Id = new Guid("6007d295-0d25-4c4b-8935-f440b326cc3e");
             CategoryName = "Art & Music ";

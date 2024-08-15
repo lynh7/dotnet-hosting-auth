@@ -1,7 +1,10 @@
-﻿namespace Host.Models.APIModels.BaseModel
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Host.Models.APIModels.BaseModel
 {
     public abstract class BaseModel
-    {
+    { 
         public virtual Guid Id { get; set; }
         public DateTime CreatedOn { get; set; }
         public DateTime ModifiedOn { get; set; }

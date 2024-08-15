@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.Book", "Host.Book\Host.Book.csproj", "{33BC5BCB-7206-4416-9EBD-B1F290E5526E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.System", "Host.System\Host.System.csproj", "{33BC5BCB-7206-4416-9EBD-B1F290E5526E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.Gateway", "Host.Gateway\Host.Gateway.csproj", "{582236CD-BE93-41FF-8CA9-033B07C5F7E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{874AA2D6-5DA3-4257-A8A2-3AA2B1415D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.Common", "Host.Common\Host.Common.csproj", "{1F03BA1D-2309-4829-93B6-35B129758C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.Common", "Host.Common\Host.Common.csproj", "{1F03BA1D-2309-4829-93B6-35B129758C3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.DB", "Host.DB\Host.DB.csproj", "{B9AB1EE5-9C92-472A-B71A-EFF3D7B49B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.DB", "Host.DB\Host.DB.csproj", "{B9AB1EE5-9C92-472A-B71A-EFF3D7B49B0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.DB.MySQL", "Host.DB.MySQL\Host.DB.MySQL.csproj", "{68A4D333-1D42-4606-B51F-9D756165F37F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.DB.MySQL", "Host.DB.MySQL\Host.DB.MySQL.csproj", "{68A4D333-1D42-4606-B51F-9D756165F37F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.Services", "Host.Services\Host.Services.csproj", "{4FCB8171-BA24-4838-8725-79A0FB1DCED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.Services", "Host.Services\Host.Services.csproj", "{4FCB8171-BA24-4838-8725-79A0FB1DCED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.Auth", "Host.Auth\Host.Auth.csproj", "{59172199-0059-4A6D-8F0F-B5E52191AD77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host.Models", "Host.Models\Host.Models.csproj", "{4A6E067F-B873-4502-81CF-71039DB6C715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{4FCB8171-BA24-4838-8725-79A0FB1DCED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCB8171-BA24-4838-8725-79A0FB1DCED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FCB8171-BA24-4838-8725-79A0FB1DCED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59172199-0059-4A6D-8F0F-B5E52191AD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59172199-0059-4A6D-8F0F-B5E52191AD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59172199-0059-4A6D-8F0F-B5E52191AD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59172199-0059-4A6D-8F0F-B5E52191AD77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6E067F-B873-4502-81CF-71039DB6C715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6E067F-B873-4502-81CF-71039DB6C715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6E067F-B873-4502-81CF-71039DB6C715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6E067F-B873-4502-81CF-71039DB6C715}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +68,7 @@ Global
 		{B9AB1EE5-9C92-472A-B71A-EFF3D7B49B0E} = {874AA2D6-5DA3-4257-A8A2-3AA2B1415D9C}
 		{68A4D333-1D42-4606-B51F-9D756165F37F} = {874AA2D6-5DA3-4257-A8A2-3AA2B1415D9C}
 		{4FCB8171-BA24-4838-8725-79A0FB1DCED8} = {874AA2D6-5DA3-4257-A8A2-3AA2B1415D9C}
+		{4A6E067F-B873-4502-81CF-71039DB6C715} = {874AA2D6-5DA3-4257-A8A2-3AA2B1415D9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD46EE2A-491C-4D5C-8CA4-0C9C7D328D7A}

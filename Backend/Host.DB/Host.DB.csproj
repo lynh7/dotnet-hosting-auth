@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="EntityModels\" />
-    <Folder Include="UnitOfWorkPattern\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
