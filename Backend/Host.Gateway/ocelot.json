@@ -13,7 +13,19 @@
         }
       ],
       "UpstreamPathTemplate": "/api/book",
-      "UpstreamHttpMethod": [ "Get","Post","Put","Delete" ]
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/v1.0/Auth/login/{type}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7081
+        }
+      ],
+      "UpstreamPathTemplate": "/api/login/{type}",
+      "UpstreamHttpMethod": [ "Post" ]
     }
   ]
 }

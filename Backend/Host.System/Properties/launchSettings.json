@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "Host.Book": {
+    "Host.System": {
       "commandName": "Project",
       "commandLineArgs": "--provider Mysql",
       "launchBrowser": false,
@@ -15,7 +15,7 @@
     },
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
