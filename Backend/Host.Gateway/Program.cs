@@ -1,9 +1,8 @@
+using Host.DB;
+using Host.DB.Context;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using Host.DB;
-using Microsoft.EntityFrameworkCore;
 using Serilog;
-using Host.DB.Context;
 
 
 var builder = WebApplication.CreateBuilder(args);

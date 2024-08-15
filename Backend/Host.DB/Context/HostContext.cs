@@ -70,8 +70,11 @@ namespace Host.DB.Context
 
         private void Seed(ModelBuilder modelBuilder)
         {
-            var appBuilder = modelBuilder.Entity<BookCategory>();
-            appBuilder.HasData(new BookCategory().InitBookCategory());
+            var bookBuilder = modelBuilder.Entity<BookCategory>();
+            bookBuilder.HasData(new BookCategory().InitBookCategory());
+
+            var superAdminBuilder = modelBuilder.Entity<Client>();
+            superAdminBuilder.HasData(new Client().SuperAdminSeedDefault());
         }
 
         #endregion

@@ -14,8 +14,7 @@ namespace Host.DB
         /// <para>Set startups project GH.Gateway (or what ever but MUST call this AddPersistence method in the program (startup)</para>
         /// <para>Also set Target Project based on Proivider. Example with SQLServer provider, target project must be GH.DB.SQLServer.</para>
         /// <para>Add-Migration MyMigration -Args "--provider SqlServer"</para> 
-        /// <para>cd to root folder: dotnet ef migrations add User --startup-project .\GH.AdminPortal\ --project .\GH.DB.SQLServer</para> 
-        /// <para>cd to root folder: dotnet ef migrations add User --startup-project .\GH.AdminPortal\ --project .\GH.DB.MySQL</para> 
+        /// <para>cd to root folder: dotnet ef migrations add update_Client_Argon2id --startup-project .\Host.Gateway\ --project .\Host.DB.MySQL</para> 
         /// 
         /// <para>Add-Migration UserEntities</para>
         /// <para>In the LaunchSettings.json commandLineArgs provided the SQL Provider</para>
