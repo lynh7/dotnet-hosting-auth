@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.System", "Host.Book\Host.System.csproj", "{33BC5BCB-7206-4416-9EBD-B1F290E5526E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.System", "Host.System\Host.System.csproj", "{33BC5BCB-7206-4416-9EBD-B1F290E5526E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Host.Gateway", "Host.Gateway\Host.Gateway.csproj", "{582236CD-BE93-41FF-8CA9-033B07C5F7E5}"
 EndProject

@@ -98,7 +98,7 @@ namespace Host.Book.Controllers.V1
                 {
                     return BadRequest("Not found Book Id");
                 }
-                
+
                 await _bookService.DeleteAsync(entity);
 
                 return Ok("Delete successfully");
