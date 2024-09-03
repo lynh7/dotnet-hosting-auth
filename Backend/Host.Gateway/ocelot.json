@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:5004"
+    "BaseUrl": "http://localhost:5004"
   },
   "Routes": [
     {
@@ -13,7 +13,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/book",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamHttpMethod": [ "OPTIONS", "POST", "GET", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/v1.0/Auth/login/{type}",
@@ -25,7 +25,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/login/{type}",
-      "UpstreamHttpMethod": [ "Post" ]
+      "UpstreamHttpMethod": [ "OPTIONS", "POST", "GET", "PUT", "DELETE" ]
     }
   ]
 }

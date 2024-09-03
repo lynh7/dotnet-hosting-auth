@@ -31,6 +31,11 @@ app.UseHttpsRedirection();
 
 await app.UseOcelot();
 
+#if DEBUG
+app.UseCors("AllowedAll");
+
+#endif
+
 app.UseAuthorization();
 
 app.MapControllers();
